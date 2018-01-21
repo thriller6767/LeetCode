@@ -11,9 +11,12 @@ int DynamicProgramming::movieRating(vector<int> nums)
 	if (nums.size() == 2) return *max_element(nums.begin(),nums.end());
 
 	vector<int> dp;
+	nums.push_back(0);//to determine whether to take the last element
+
 	dp.push_back(nums[0]);
 	dp.push_back(max(dp[0] + nums[1], nums[1]));
 
+	//determine whether to jump the i-1 or i-2 elements
 	for (int i = 2; i < nums.size(); ++i) {
 		dp.push_back(max(dp[i - 1] + nums[i], dp[i - 2] + nums[i]));
 
