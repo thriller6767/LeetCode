@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef MOVIERATING_H
-#define MOVIERATING_H
+#ifndef DYNAMICPROGRAMMING_H
+#define DYNAMICPROGRAMMING_H
 
 
 #include "stdafx.h"
@@ -14,11 +14,15 @@
 
 using namespace std;
 
-class MovieRating {
+class DynamicProgramming {
 public:
-	int findMaximum(vector<int> input);
+	int movieRating(vector<int> input);
 	int deleteAndEarn(vector<int> input);
+	int longestCommonSequence(string input1, string input2);
 
+
+private:
+	int isLarger(int a, int b) { return (a > b) ? a : b; }
 };
 
 
