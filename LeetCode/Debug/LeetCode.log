@@ -1,5 +1,5 @@
 ﻿  MovieRating.cpp
-c:\users\ruilit\documents\2018-sp\leetcode\leetcode\movierating.cpp(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\ruilit\documents\2018-sp\leetcode\leetcode\movierating.cpp(20): warning C4018: '<': signed/unsigned mismatch
   LeetCode.cpp
   Generating Code...
   LeetCode.vcxproj -> C:\Users\ruilit\Documents\2018-SP\LeetCode\Debug\LeetCode.exe

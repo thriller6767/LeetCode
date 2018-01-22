@@ -11,6 +11,7 @@
 #include <map>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 
 using namespace std;
 
@@ -18,7 +19,8 @@ class DynamicProgramming {
 public:
 	int movieRating(vector<int> input);
 	int deleteAndEarn(vector<int> input);
-	int longestCommonSequence(string input1, string input2);
+	int longestCommonSequence(vector<int> s1, vector<int> s2);
+	int minIncrementToEqual(vector<int> input);
 
 
 private:

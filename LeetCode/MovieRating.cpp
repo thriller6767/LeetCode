@@ -50,15 +50,22 @@ int DynamicProgramming::deleteAndEarn(vector<int> nums)
 	return max(taken, notTaken);
 	
 }
+
 //Given two sequences, find the length of longest subsequence present in both of them.
 //A subsequence is a sequence that appears in the same relative order,
 //but not necessarily contiguous.For example, “abc”, “abg”, “bdf”, “aeg”, ‘”acefg”, ..etc are 
 //subsequences of “abcdefg”.So a string of length n has 2 ^ n different possible subsequences.
-
-int DynamicProgramming::longestCommonSequence(string input1, string input2)
+int DynamicProgramming::longestCommonSequence(vector<int> s1, vector<int> s2)
 {
-	if (input1.empty() || input2.empty()) return 0;
 	return 0;
+}
+
+//We are given an array consisting of n elements.At each operation you can select any one element 
+//and increase rest of n - 1 elements by 1. You have to make all elements equal performing such 
+//operation as many times you wish.Find the minimum number of operations needed for this.
+int DynamicProgramming::minIncrementToEqual(vector<int> nums)
+{
+	return accumulate(begin(nums), end(nums), 0L) - nums.size() * *min_element(begin(nums), end(nums));
 }
 
 
